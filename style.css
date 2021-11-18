@@ -27,3 +27,37 @@ main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
+
+/* Group and items (mobile) */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.item {
+  flex: 1;
+  margin: 25px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 5px;
+}
+
+/* Groups and items (desktop) */
+@media all and (min-width: 600px) {
+  .group {
+    flex-direction: row;
+  }
+
+  section {
+    padding: 0 25%;
+  }
+}
+
+
+/* Images to group items */
+main img {
+  width: 100%;
+}
